@@ -2,14 +2,11 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./Navbar";
-import Hero from "./Hero";
 import First from "./First";
-import Inventory from "./Inventory";
 import CarView from "./CarView";
 import AdminLogin from "./AdmianLogin";
 import Admin from "./Admin";
 import ProtectedRoute from "./ProtectedRoute";
-import Contact from "./Contact";
 import Footer from "./Footer";
 
 

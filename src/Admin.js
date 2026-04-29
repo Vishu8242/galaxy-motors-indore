@@ -52,8 +52,8 @@ function Admin() {
   /* DATA */
   const [cars, setCars] = useState([]);
   const [contacts, setContacts] = useState([]);
-  const [loadingCars, setLoadingCars] = useState(true);
-  const [loadingContacts, setLoadingContacts] = useState(true);
+  const [, setLoadingCars] = useState(true);
+  const [, setLoadingContacts] = useState(true);
 
   /* FETCH CARS */
   useEffect(() => {
@@ -161,8 +161,8 @@ function Admin() {
   const totalCars = cars.length;
   const totalImages = cars.length * 12;
   const totalContacts = contacts.length;
-  const highestPrice =
-    cars.length > 0 ? Math.max(...cars.map(c => Number(c.price))) : 0;
+  // const highestPrice =
+  //   cars.length > 0 ? Math.max(...cars.map(c => Number(c.price))) : 0;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 px-4 md:px-10 pt-24 pb-14">
